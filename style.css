@@ -11,7 +11,7 @@ div img { width: 100%;
 .main {
     display: flex;
     align-content: space-between;
-    flex-wrap: wrap;
+  
 
 }
 header { 
@@ -32,4 +32,14 @@ aside{
 }
 p {
     text-align: justify;
+}
+@media (max-width: 600){ 
+   .main {
+           flex-wrap: wrap;
+           flex-direction: column;
+}
+.card {
+    width: 100%;
+}
+
 }
