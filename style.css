@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+body{ margin:0;
+      font-family: 'Raleway', sans-serif;
+     
+    
+}
+div img { width: 100%;
+          height: auto;
+
+}
+.main {
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+
+}
+header { 
+    width: 70%;
+}
+aside{ 
+    width: 30%;
+}
+.card {
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+    background-color: #ffffff;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 16px;
+}
+.card-text {
+    padding: 15px
+}
+p {
+    text-align: justify;
+}
