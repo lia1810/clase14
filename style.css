@@ -54,23 +54,31 @@ aside{
 p {
     text-align: justify;
 }
-@media (max-width: 600px){ 
-   .main {
+
+@media (max-width: 600px){
+    
+   .main { 
            flex-wrap: wrap;
            flex-direction: column;
 }
-    .card {
-    width: 100%;
 }
 
-}
+/* @media (max-width: 600px){
+    aside{
+        width: 100%;
+    }
+    header{
+        width: 100%;
+    }
+} */
+
 @media (max-width: 600px){
     .hamb {
         display: block;
         margin-left: 10px;
     }
-nav {
-    justify-content: flex-end;
+
+nav { justify-content: flex-end;
 }
     .barra{ display: none}
 }
