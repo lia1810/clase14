@@ -2,23 +2,44 @@
 body{ margin:0;
       font-family: 'Raleway', sans-serif;
      
-    
 }
-div img { width: 100%;
-          height: auto;
+nav{ background-color:lightsteelblue;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav div {
+    margin: 25PX;
+}
+.barra {
+    display: flex;
+}
+.ele:hover{ color: rgb(136, 105, 20);
+    font-weight: bold;
+}
+.hamb {width: 100%;
+    height: auto;
+    display: none;
+}
 
-}
 .main {
     display: flex;
     align-content: space-between;
+    flex-wrap: wrap;
   
+}
+div img { width: 100%;
+    height: auto;
 
 }
 header { 
     width: 70%;
+ 
 }
 aside{ 
     width: 30%;
+  
 }
 .card {
     box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
@@ -33,13 +54,26 @@ aside{
 p {
     text-align: justify;
 }
-@media (max-width: 600){ 
+@media (max-width: 600px){ 
    .main {
            flex-wrap: wrap;
            flex-direction: column;
 }
-.card {
+    .card {
     width: 100%;
 }
 
 }
+@media (max-width: 600px){
+    .hamb {
+        display: block;
+        margin-left: 10px;
+    }
+nav {
+    justify-content: flex-end;
+}
+    .barra{ display: none}
+}
+
+
+
