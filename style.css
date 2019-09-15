@@ -23,10 +23,15 @@ nav div {
        display: none;
 }
 
-.main { margin: 20px;
-    display: flex;
-    align-content: space-between;
-    flex-wrap: wrap;
+.main {
+     margin-top: 150px;
+     margin-left: 250px;
+     margin-right: 250px;
+     margin-bottom: 20px;
+     display: flex;
+     justify-content: space-between;
+
+    
 }
 
 div img { width: 100%;
@@ -35,23 +40,20 @@ div img { width: 100%;
 
 header {
     padding: 10px;
-     flex: 2 1 60vh;
+    flex: 1 3 60vw;
     margin-left: 10px;
          
 }
 
 aside{ padding: 10px;
-    flex: 1 3 10vh; 
+     flex: 2 1 20vw; 
+     margin-left: 30px;
   
 }
 
-.card {
+.card { margin-bottom: 50px;
     background-color: #ffffff;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-right: 15px;
     box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
-     
 }
 .card-text {
     padding: 15px
@@ -86,24 +88,21 @@ p {
         margin-left: 10px;
     }
 
-nav { justify-content: flex-end;
+    nav { justify-content: flex-end;
 }
     .barra{ display: none}
 }
 
 @media (max-width: 1400px) and (min-width: 599px){ 
     .main{
-        
             flex-wrap: wrap;
-            flex-direction: column;
-          
+            flex-direction: column;    
  }
 
- aside{ 
+    aside{ 
     display: flex;
-  
-   justify-content: space-evenly;
+    justify-content: space-evenly;
 }
-aside > div { width: 30%;}
+    aside > div { width: 30%;}
 }
 
